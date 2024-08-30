@@ -1,4 +1,4 @@
-document.body.innerText = "no"
+//document.body.innerText = "no"
 function displayTable(node) {
     const tableContainer = document.getElementById('table-container');
     const children = Array.from(node.children);
@@ -107,12 +107,19 @@ var data = [{
 }];**/
 //const json = JSON.parse(data);
 //fetch('data.json' )
+async function main() {
+    try {
 fetch('https://snippet.host/cxaamj/raw') 
 .then((response) => response.json())
 .then(function(json) {loadTree(json)}).then(treeClickHandler());
 //console.log(data);
 //loadTree(json) ;
-
+    }
+    catch(error) {
+        document.body.innerText = error.message
+    }
+}
+main() 
 function treeClickHandler() {
   $('#tree1').on(
     'tree.click',
