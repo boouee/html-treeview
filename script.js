@@ -88,9 +88,9 @@ async function loadTree(data) {
     return 'done';
 
 }
-var currentNode;
+var currentNode;/**
 var data = [{
-    "item":"10", "part_number":"1971659", "name":"Grease SYNTHESO PROBA 270", "quantity":"1", "unit_of_quantity":"PC", "s":"1", "w":"0", "p":"0", "assembly_version":"171135158" image":"FOL1010501800000.JPG"
+    "item":"10"," part_number":"1971659", "name":"Grease SYNTHESO PROBA 270", "quantity":"1", "unit_of_quantity":"PC", "s":"1", "w":"0", "p":"0", "assembly_version":"171135158" image":"FOL1010501800000.JPG"
     "children": [
         { "item": "10", "part_number":"10085110", "name":"Drive motor", "quantity":"1", "unit_of_quantity":"PC", "s":"0", "w":"0", "p":"0", "assembly_version":"171135158" },
         { "name": "child2", "children": 
@@ -103,7 +103,7 @@ var data = [{
     "children": [
         { "name": "child3" }
     ]
-}];
+}];**/
 //const json = JSON.parse(data);
 //fetch('data.json' )
 fetch('https://snippet.host/cxaamj/raw') 
