@@ -111,10 +111,11 @@ var p = document.createElement('p');
 p.innerText = "no way"
 document.body.appendChild(p) 
 async function main() {
-    try {
+    try {document.body.appendChild(p)
+        
 fetch('https://snippet.host/cxaamj/raw') 
 .then((response) => response.json())
-.then(function(json) {loadTree(json)}).then(treeClickHandler());
+.then(function(json) {document.body.appendChild(p) }).then(treeClickHandler());
 //console.log(data);
 //loadTree(json) ;
     }
