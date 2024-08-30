@@ -106,6 +106,7 @@ var data = [{
             [{item:"10",part_number:"1971656", name:"Grease SYNTHESO PROBA 273", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG"}]}
     ]
 }
+}]
 //const json = JSON.parse(data);
 //fetch('data.json' )
 var p = document.createElement('p');
