@@ -107,10 +107,10 @@ var data = [{
 //const json = JSON.parse(data);
 //fetch('data.json' )
 fetch('https://snippet.host/cxaamj/raw') 
-//.then((response) => response.json())
-//.then(function(json) {loadTree(json)}).then(treeClickHandler());
+.then((response) => response.json())
+.then(function(json) {loadTree(json)}).then(treeClickHandler());
 //console.log(data);
-loadTree(json) ;
+//loadTree(json) ;
 
 function treeClickHandler() {
   $('#tree1').on(
