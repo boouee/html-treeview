@@ -89,22 +89,23 @@ async function loadTree(data) {
     return 'done';
 
 }
-var currentNode;/**
+var currentNode;
 var data = [{
-    "item":"10"," part_number":"1971659", "name":"Grease SYNTHESO PROBA 270", "quantity":"1", "unit_of_quantity":"PC", "s":"1", "w":"0", "p":"0", "assembly_version":"171135158" image":"FOL1010501800000.JPG"
-    "children": [
-        { "item": "10", "part_number":"10085110", "name":"Drive motor", "quantity":"1", "unit_of_quantity":"PC", "s":"0", "w":"0", "p":"0", "assembly_version":"171135158" },
-        { "name": "child2", "children": 
-            {  "item" : "20", "part_number":"10085111", "name":"Drive motor"}    
-        }
+    item:"10",part_number:"1971659", name:"Grease SYNTHESO PROBA 270", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG", 
+    children: [
+        {item:"10",part_number:"1971658", name:"Grease SYNTHESO PROBA 271", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG"}, 
+        {item:"20",part_number:"1971657", name:"Grease SYNTHESO PROBA 272", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG", children:
+            [{item:"10",part_number:"1971656", name:"Grease SYNTHESO PROBA 273", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG"}]}
     ]
 },
 {
-    "name": "node2",
-    "children": [
-        { "name": "child3" }
+    item:"10",part_number:"1971659", name:"Grease SYNTHESO PROBA 270", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG", 
+    children: [
+        {item:"10",part_number:"1971658", name:"Grease SYNTHESO PROBA 271", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG"}, 
+        {item:"20",part_number:"1971657", name:"Grease SYNTHESO PROBA 272", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG", children:
+            [{item:"10",part_number:"1971656", name:"Grease SYNTHESO PROBA 273", quantity:"1", unit_of_quantity:"PC", s:"1", w:"0", p:"0", assembly_version:"171135158", image:"FOL1010501800000.JPG"}]}
     ]
-}];**/
+}
 //const json = JSON.parse(data);
 //fetch('data.json' )
 var p = document.createElement('p');
@@ -115,12 +116,12 @@ document.body.appendChild(p)
 //async function main() {
     //try {document.body.appendChild(p)
         
-fetch('https://snippet.host/cxaamj/raw') 
+/**fetch('https://snippet.host/cxaamj/raw') 
 .then((response) => response.json())
 .then(function(json) {p.innerText = json}).then(
 document.body.appendChild(p) );
-//console.log(data);
-//loadTree(json) ;
+//console.log(data);**/
+loadTree(data) ;
     /**}
     catch(error) {
         document.body.innerText = error.message
