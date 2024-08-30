@@ -109,20 +109,23 @@ var data = [{
 //fetch('data.json' )
 var p = document.createElement('p');
 p.innerText = "no way"
-document.body.appendChild(p) 
-async function main() {
-    try {document.body.appendChild(p)
+document.body.appendChild(p)
+
+document.body.appendChild(p)
+//async function main() {
+    //try {document.body.appendChild(p)
         
 fetch('https://snippet.host/cxaamj/raw') 
 .then((response) => response.json())
-.then(function(json) {document.body.appendChild(p) }).then(treeClickHandler());
+.then(function(json) {p.innerText = json}).then(
+document.body.appendChild(p) );
 //console.log(data);
 //loadTree(json) ;
-    }
+    /**}
     catch(error) {
         document.body.innerText = error.message
     }
-}
+}**/
 main() 
 function treeClickHandler() {
   $('#tree1').on(
