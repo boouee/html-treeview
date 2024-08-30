@@ -107,6 +107,9 @@ var data = [{
 }];**/
 //const json = JSON.parse(data);
 //fetch('data.json' )
+var p = document.createElement('p');
+p.innerText = "no way"
+document.body.appendChild(p) 
 async function main() {
     try {
 fetch('https://snippet.host/cxaamj/raw') 
