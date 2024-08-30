@@ -1,3 +1,4 @@
+document.body.innerText = "no"
 function displayTable(node) {
     const tableContainer = document.getElementById('table-container');
     const children = Array.from(node.children);
